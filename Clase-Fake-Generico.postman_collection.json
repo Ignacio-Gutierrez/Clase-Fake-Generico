@@ -204,6 +204,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "UpdateProducto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Libro 1\",\r\n        \"price\": 470.00,\r\n        \"description\": \"Descripción del Libro 1\",\r\n        \"category\": \"Libros\",\r\n        \"image\": \"imagen1.jpg\",\r\n        \"rating\": {\r\n            \"rate\": 4.50,\r\n            \"count\": 100\r\n        }\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/fakestoreapi.com/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fakestoreapi.com",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
